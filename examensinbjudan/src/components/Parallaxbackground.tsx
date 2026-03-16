@@ -72,14 +72,22 @@ export function ParallaxBackground(): JSX.Element {
   Scroll listener
   ========================= */
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
+ useEffect(() => {
+  let ticking = false;
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const onScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        setScrollY(window.scrollY);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  };
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  return () => window.removeEventListener("scroll", onScroll);
+}, []);
 
   /* =========================
   Render helper
