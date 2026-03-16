@@ -9,4 +9,45 @@ body {
   color: white;
   font-family: 'Press Start 2P', monospace;
   overflow-x: hidden;
+  height: 7000px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Star colors */
+.star-cyan {
+  background-color: cyan;
+  border-radius: 50%;
+}
+
+.star-purple {
+  background-color: violet;
+  border-radius: 50%;
+
+}
+
+.star-white {
+  background-color: white;
+  border-radius: 50%;
 }
