@@ -1,10 +1,14 @@
 *Brevikon med hovereffekt*
-"Du har en inbjudan, klicka på mig"
+"Du har en inbjudan, klicka på mig!"
 
 *Nästa steg*
+
+(Rubrik) 
 Det var en höstdag 2024 när Karin och Tea gav sig ut på ett stort äventyr. Målet - byta bana och bli programmerare. Ja ni vet - såna där som sitter vid datorer och "bip-boppar" som vi kallade det.
 
 *Nästa steg*
+
+(Rubrik)
 Efter otaliga timmar av blod svett och kodande
 Har Karin och Tea slutfört sin programmeringsutbildning och kan nu kalla sig för...
 FRONT END DEVELOPERS!
@@ -12,6 +16,7 @@ Alltså: Professionella Bip-boppare!
 
 
 *Nästa steg*
+
 Denna milstolpe vill vi fira med er som hejat på oss längs vägen!
 
 Varmt välkomna på examensfirande!
@@ -24,6 +29,9 @@ Fridensborgsvägen 18
 170 69 Solna
 (Gångavstånd från pendeltågsstationen Ulriksdal)
 
+*Nästa steg*
+
+Rubrik: Vi ses snart! (tex)
 RVSP HÄR!
 (mailto-grej där man mailar och berättar att man kommer. Då kan de också skriva om allergier)
 
