@@ -5,13 +5,19 @@
 }
 
 h2 {
-  font-size: 2rem
+  font-size: 2rem;
+  color: #796fff;
+  text-shadow:
+    0 0 4px #796fff,
+    0 0 8px #796fff,
+    0 0 6px #796fff;
 }
 
 p {
   font-family: 'kode mono', monospace;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: white;
+  line-height: 2.3;
 }
 
 body {
@@ -19,15 +25,55 @@ body {
   color: white;
   font-family: 'Press Start 2P', monospace;
   overflow-x: hidden;
-  height: 7000px;
+}
+
+.level{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.text-container {
+  width: 320px;
+  padding-left: 15px; 
+  padding-right: 15px;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  border-radius: 4px;
+  border: 2px solid #796fff;
+  box-shadow:
+    0 0 6px #796fff,
+    0 0 12px #796fff,
+    0 0 24px rgba(127, 91, 235, 0.8);
+  background: #19164b;
 }
 
 
+@media (min-width: 600px) {
+
+p {
+  font-size: 1.3rem;
+  line-height: 3;
+}
+
+
+.text-container {
+  width: 500px;
+  padding: 15px;
+}
+}
 /* Parallax */
 .fixed {
   position: fixed;
