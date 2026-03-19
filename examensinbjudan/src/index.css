@@ -11,6 +11,7 @@ h2 {
 p {
   font-family: 'kode mono', monospace;
   font-size: 1.2rem;
+  color: white;
 }
 
 body {
@@ -19,8 +20,15 @@ body {
   font-family: 'Press Start 2P', monospace;
   overflow-x: hidden;
   height: 7000px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+
+/* Parallax */
 .fixed {
   position: fixed;
 }
