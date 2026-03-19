@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 2rem
+}
+
+p {
+  font-family: 'kode mono', monospace;
+  font-size: 1.2rem;
+}
+
 body {
   background: black;
   color: white;
