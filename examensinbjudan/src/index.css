@@ -5,19 +5,15 @@
 }
 
 h2 {
-  font-size: 2rem;
-  color: #796fff;
-  text-shadow:
-    0 0 4px #796fff,
-    0 0 8px #796fff,
-    0 0 6px #796fff;
+  font-size: 1.7rem;
+  color: white
 }
 
 p {
   font-family: 'kode mono', monospace;
   font-size: 1.1rem;
   color: white;
-  line-height: 2.3;
+  line-height: 2;
 }
 
 body {
@@ -60,12 +56,61 @@ body {
   background: #19164b;
 }
 
+/* Level 4*/
+
+.invitation-info {
+  font-family: 'kode mono', monospace;
+  width: 320px;
+  height: auto;
+
+  div {
+    border-top: 3px solid #796fff;
+    display: flex;
+    text-align: left;
+    height: 60px;
+    align-items: center;
+    padding-left: 1rem;
+  }
+
+  .address {
+    padding: 1rem;
+    display: block;
+    min-height: 110px;
+  }
+
+  span {
+        font-family: 'Press Start 2P', monospace;
+        font-size: small;
+  }
+}
+
+/* RSVP-level */
+.rsvp-link {
+  width: 240px;
+  height: 50px;
+  margin-top: 20px;
+
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow:
+    0 0 6px #433ca9,
+    0 0 12px #433ca9,
+    0 0 24px rgb(127, 91, 235);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 
 @media (min-width: 600px) {
 
 p {
   font-size: 1.3rem;
-  line-height: 3;
+  line-height: 2.3;
 }
 
 
@@ -73,7 +118,15 @@ p {
   width: 500px;
   padding: 15px;
 }
+
+/* level 4*/
+
+.invitation-info {
+  width: 500px
 }
+}
+
+
 /* Parallax */
 .fixed {
   position: fixed;
