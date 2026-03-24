@@ -1,4 +1,5 @@
 import './App.css'
+import { Level1 } from './components/Level1'
 import { LevelFour } from './components/LevelFour'
 import { LevelThree } from './components/LevelThree'
 import { ParallaxBackground } from './components/Parallaxbackground'
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
     <ParallaxBackground></ParallaxBackground>
+    <Level1/>
     <LevelThree></LevelThree>
     <LevelFour></LevelFour>
     <RSVP_Form/>

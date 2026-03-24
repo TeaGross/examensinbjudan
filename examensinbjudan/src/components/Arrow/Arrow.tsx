@@ -1,4 +1,5 @@
 import "./Arrow.css"
+import { ArrowDown } from "lucide-react";
 
 type ArrowProps = {
         targetId: string;
@@ -13,7 +14,7 @@ export const Arrow = ({ targetId }: ArrowProps) => {
 
      return (
     <button className="arrow" onClick={handleClick}>
-      ↓
+         <ArrowDown size={40} />
     </button>
   );
 }
