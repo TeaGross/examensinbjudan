@@ -2,7 +2,7 @@ import './App.css'
 import { LevelFour } from './components/LevelFour'
 import { LevelThree } from './components/LevelThree'
 import { ParallaxBackground } from './components/Parallaxbackground'
-import { RSVP } from './components/RSVP'
+import { RSVP_Form } from './components/RSVP_Form/RSVP_Form'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
     <ParallaxBackground></ParallaxBackground>
     <LevelThree></LevelThree>
     <LevelFour></LevelFour>
-    <RSVP></RSVP>
+    <RSVP_Form/>
     </>
   )
 }
