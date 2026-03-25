@@ -12,6 +12,6 @@ export const Button = ({ targetId }: ButtonProps) => {
     };
 
     return (
-        <button className="btn" onClick={handleClick}>Klicka mig!</button>
+        <button className="btn" onClick={handleClick}>Klicka på mig!</button>
     )
 }
