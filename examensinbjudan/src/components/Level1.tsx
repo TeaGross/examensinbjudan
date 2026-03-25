@@ -9,9 +9,9 @@ export const  Level1 = () => {
             <div className="text-container">
                 <InvitationCard></InvitationCard>
                 <p>Du har fått en inbjudan!</p>
-                <Button/>
+                <Button targetId="level-two"/>
             </div>
-            <Arrow targetId=""/>
+            <Arrow targetId="level-two"/>
         </div>
     )
 }

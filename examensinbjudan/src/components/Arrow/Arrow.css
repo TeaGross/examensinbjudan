@@ -3,6 +3,9 @@
   cursor: pointer;
   text-align: center;
   animation: bounce 1.5s infinite;
+  color: rgb(26, 162, 230);
+  background: transparent;
+  border: none;
 }
 
 /* Pulserande "upp och ner" */
