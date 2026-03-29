@@ -1,6 +1,7 @@
 .invitation-card {
-    width: 70vw;
+    width: 90%;
     height: auto;
+    margin-bottom: 1rem;
     animation: pulse 1.5s infinite ease-in-out;
 }
 
