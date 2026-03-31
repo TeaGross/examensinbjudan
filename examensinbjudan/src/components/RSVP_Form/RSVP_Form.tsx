@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './RSVP_Form.css'
 //import emailjs from "emailjs-com";
 
 export const RSVP_Form = () => {
@@ -35,39 +36,57 @@ export const RSVP_Form = () => {
   return (
     <div className="level" id="RSVP-form">
       <h2>VI SES SNART</h2>
+      <div className="text-container">
+        
+        <p>
+          Vi hoppas att ni vill komma och fira med oss! <br /> <br />
+          OSA senast 17/5 och meddela gärna om ni har några allergier.         
+        </p>
 
-      <form onSubmit={handleSubmit} className="text-container">
-        <input
-          type="text"
-          placeholder="Ditt namn"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
+        <form onSubmit={handleSubmit} className="rsvp-form">
+          <label htmlFor="">
+          Ditt/Era namn
+          <input
+            type="text"
+            placeholder="Namn"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            className="input"
+          />
+          </label>
 
-        <textarea
-          placeholder="Allergier / meddelande"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
+          <label>
+            Meddelande
+          <textarea
+            placeholder="Allergier eller övrig information"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className="input"
+          />
 
-        <div className="radio-group">
-            <label>
-                Ja, jag kommer
-                <input type="radio" name="rsvp" checked={isComing === "Ja"} value="Ja"
-                onChange={(e) => setIsComing(e.target.value)}
-                />
-            </label>
-            <label>
-                Nej, jag kan tyvärr inte
-                <input type="radio" name="rsvp" checked={isComing === "Nej"} value="Nej"
-                onChange={(e) => setIsComing(e.target.value)}
-                />
-            </label>
-        </div>
+          </label>
 
-        <button type="submit">OSA</button>
-      </form>
+          <div className="radio-group">
+              <label>
+                  <input type="radio" name="rsvp" checked={isComing === "Ja"} value="Ja"
+                  onChange={(e) => setIsComing(e.target.value)}
+                  />
+                  Ja, jag kommer
+              </label>
+              <label>
+                  <input type="radio" name="rsvp" checked={isComing === "Nej"} value="Nej"
+                  onChange={(e) => setIsComing(e.target.value)}
+                  />
+                  Nej, jag kan tyvärr inte
+              </label>
+          </div>
+
+          <div>
+            <button className="btn" type="submit">OSA</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
