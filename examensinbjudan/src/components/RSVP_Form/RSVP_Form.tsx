@@ -45,7 +45,7 @@ export const RSVP_Form = () => {
 
         <form onSubmit={handleSubmit} className="rsvp-form">
           <label htmlFor="">
-          Namn
+          Ditt/Era namn
           <input
             type="text"
             placeholder="Namn"
