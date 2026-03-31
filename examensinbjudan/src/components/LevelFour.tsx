@@ -22,7 +22,7 @@ export const LevelFour = () => {
                         <div>
                             <span>
                                 <Clock />
-                                Tid:</span> Öppet hus från klockan 14
+                                Tid:</span> Öppet hus från kl 14
                         </div>
                         <div>
                             <span>

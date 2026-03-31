@@ -91,9 +91,9 @@ export const RSVP_Form = () => {
             <button className="btn" type="submit">OSA</button>
           </div>
         </form>
+      </div>
         )
        }
-      </div>
     </div>
   );
 };
