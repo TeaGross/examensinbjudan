@@ -1,41 +1,45 @@
 import { useState } from "react";
-//import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
+import { ConfirmationMessage } from "../ConfirmationMessage";
 
 export const RSVP_Form = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [isComing, setIsComing] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(name, message, isComing)
+    setIsSubmitted(true)
 
-//     emailjs.send(
-//       "service_igjp2e8",      // <-- din Service ID
-//       "template_yytfutl",     // <-- din Template ID
-//       {
-//         name: name,
-//         message: message,
-//         isComing: isComing
-//       },
-//       "2_qLWdKeoZIavt7c8"    // <-- din Public Key
-//     )
-//     .then(() => {
-//       alert("Tack! Din anmälan är skickad 🎉");
-//       setName("");
-//       setMessage("");
-//       setIsComing("")
-//     })
-//     .catch((error) => {
-//       console.error(error);
-//       alert("Något gick fel 😬");
-//     });
+    emailjs.send(
+      "service_igjp2e8",      // <-- din Service ID
+      "template_yytfutl",     // <-- din Template ID
+      {
+        name: name,
+        message: message,
+        isComing: isComing
+      },
+      "2_qLWdKeoZIavt7c8"    // <-- din Public Key
+    )
+    .then(() => {
+      setName("");
+      setMessage("");
+      setIsComing("")
+    })
+    .catch((error) => {
+      console.error(error);
+      alert("Något gick fel! Hör av dig till Karin eller Tea och OSA till dom direkt.");
+    });
     };
 
   return (
     <div className="level" id="RSVP-form">
       <h2>VI SES SNART</h2>
-
+      
+      {isSubmitted ? (
+        <ConfirmationMessage/>
+      ) : (
       <form onSubmit={handleSubmit} className="text-container">
         <input
           type="text"
@@ -65,9 +69,10 @@ export const RSVP_Form = () => {
                 />
             </label>
         </div>
-
         <button type="submit">OSA</button>
       </form>
+      )
+    }
     </div>
   );
 };
